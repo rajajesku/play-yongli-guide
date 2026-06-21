@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>永利 · 站点介绍</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafaf9;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+      color: #1e1e1e;
+      line-height: 1.75;
+      padding: 2.5rem 1.25rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 640px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* 标题层级 */
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #1a1a1a;
+      margin-top: 0.8rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #2a2a2a;
+      margin-top: 2.8rem;
+      margin-bottom: 0.65rem;
+      border-bottom: 1px solid #e6e4e0;
+      padding-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #3b3b3b;
+      margin-top: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      font-size: 0.98rem;
+      color: #3a3a3a;
+    }
+
+    .subhead {
+      font-size: 1rem;
+      color: #6b6b6b;
+      margin-top: -0.2rem;
+      margin-bottom: 2.2rem;
+      font-weight: 400;
+    }
+
+    /* 卡片区 */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 2rem 0 1.8rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 1.5rem 1.8rem;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03), 0 4px 12px rgba(0, 0, 0, 0.02);
+      border: 1px solid #efede9;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .card-title {
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #1e1e1e;
+    }
+
+    .card p {
+      font-size: 0.93rem;
+      margin-bottom: 0.3rem;
+      color: #4a4a4a;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f0eee9;
+      color: #4f4f4f;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 40px;
+      margin-right: 0.4rem;
+      margin-top: 0.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    .inline-link {
+      color: #2b5f8a;
+      text-decoration: none;
+      font-weight: 450;
+      border-bottom: 1px solid rgba(43, 95, 138, 0.2);
+      transition: border-color 0.15s;
+    }
+
+    .inline-link:hover {
+      border-bottom-color: #2b5f8a;
+    }
+
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .faq-item strong {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.15rem;
+      color: #2c2c2c;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      font-size: 0.93rem;
+    }
+
+    .note-box {
+      background: #f4f2ee;
+      border-radius: 12px;
+      padding: 1.1rem 1.4rem;
+      margin: 2rem 0 1.2rem;
+      font-size: 0.9rem;
+      color: #4a4a4a;
+      border-left: 3px solid #d0ccc4;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e6e4e0;
+      margin: 2.6rem 0 1.2rem;
+    }
+
+    .footer-text {
+      font-size: 0.82rem;
+      color: #8c8a86;
+      margin-top: 2.6rem;
+      text-align: left;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1.6rem 1rem;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      .card {
+        padding: 1.2rem 1.2rem;
+      }
+
+      .subhead {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero 简练 -->
+  <h1>永利 · 一则说明</h1>
+  <div class="subhead">一个偏向信息聚合与轻工具定位的站点</div>
+
+  <p>
+    「<a href="https://play-yongli.com" class="inline-link">永利</a>」并不是一个门户或大型平台，而更接近一个以内容组织和场景索引为主的小型站点。它的设计初衷是面向日常的信息查询、分类浏览与简单交互，没有多余的装饰或复杂的注册流程。你可以将其理解为一个经过整理的起点——它把一些可能有用的页面、资源或功能条目聚合在同一处，省去反复搜索的成本。
+  </p>
+
+  <p>
+    站点本身保持克制：不记录隐私数据、不推送广告、不要求用户登录。所有内容均以公开、静态的方式呈现，访问路径清晰，适合希望快速获取信息而不被干扰的人。
+  </p>
+
+  <!-- 亮点卡片 -->
+  <h2>特点概要</h2>
+  <div class="card-grid">
+
+    <div class="card">
+      <div class="card-title">轻量的信息结构</div>
+      <p>页面层级扁平，分类以实用为优先。每个版块内容独立，无需层层跳转即可了解大致范围。</p>
+      <span class="tag">无注册</span>
+      <span class="tag">静态页面</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">场景化使用建议</div>
+      <p>适合在需要快速参考某个领域条目、查阅简短说明或寻找外部链接时使用。不追求大而全，更侧重“找得到、读得完”。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">克制的可信边界</div>
+      <p>内容来源均经过基本核实，但站点自身不提供专业鉴定或医疗、金融等领域的权威建议。任何关键决策请以官方或专业机构信息为准。</p>
+    </div>
+
+  </div>
+
+  <!-- 使用建议段落，自然强调 -->
+  <h2>常见的使用场景</h2>
+  <p>
+    如果你正在做一个快速的项目调研，或者想了解某个概念的基本轮廓，<a href="https://play-yongli.com" class="inline-link">永利</a>可能是一个不错的索引起点。它的结构偏向知识卡片式——每个条目或分类都配有简短的描述，方便判断是否继续深入。另外，站内部分页面提供外部链接整理，尤其适合对比阅读或作为备忘清单。
+  </p>
+  <p>
+    但也请注意：站点内容不会实时更新到最新，部分信息可能存在滞后。对于时效性要求高的事项（如政策、价格、最新版本），建议交叉验证。
+  </p>
+
+  <!-- FAQ 摘要（克制版） -->
+  <h2>常见疑问摘要</h2>
+  <div class="faq-item">
+    <strong>这个站点收录哪些类型的内容？</strong>
+    <p>以通用知识、工具索引、条目说明为主，部分页面包含外部参考链接。不包含论坛、社交或用户生成内容。</p>
+  </div>
+  <div class="faq-item">
+    <strong>访问是否需要付费或注册？</strong>
+    <p>完全免费，无需注册或提供个人信息。所有页面公开可见。</p>
+  </div>
+  <div class="faq-item">
+    <strong>信息准确吗？可以引用吗？</strong>
+    <p>站点内容均经过人工整理与复核，但无法保证绝对无疏漏。普通引用建议配合原始出处一同使用。</p>
+  </div>
+
+  <!-- 提示框：可信但克制的说明 -->
+  <div class="note-box">
+    <strong>访问说明 · 可信范围内</strong><br>
+    本站不收集用户数据，不设追踪脚本。内容方面，所有条目均标注了来源或参考说明。请将本站视为一个辅助索引工具，而非最终决策依据。遇到存疑之处，欢迎通过站点内提供的联系渠道反馈。
+  </div>
+
+  <hr>
+  <p style="font-size:0.9rem; color:#5f5d59;">
+    如果你对某个板块感兴趣，可以直接进入 <a href="https://play-yongli.com" class="inline-link">永利</a> 浏览全部内容。页面加载迅速，无需等待。
+  </p>
+
+  <div class="footer-text">
+    基于公开信息整理 · 页面方向：产品说明式
+  </div>
+
+</div>
+</body>
+</html>
